@@ -15,3 +15,13 @@
   - A maioria das opções da Sidebar tem a mesma configuração, então se for possível passar os ícones do React como propriedade dá para transformar as opções em componente para ganhar tempo.
   - Componentizar as informações do usuário (nome, email e foto) para passar como propriedades já que vamos pegar essas informações por meio de requisições no banco.
   - Pesquisar sobre usuários e acessos, mais especificamente sobre "hierarquia" nas rotas (adim/user) para refatorar e reaproveitar API já criada.
+
+
+#### 11/09
+#### O que foi feito:
+- Começo do formulário de adição de notas
+- Criação de um arquivo para representar um "servidor" local
+
+#### O que falta:
+- Ainda falta componentizar melhor a Sidebar
+- Refatorar o código de responsividade da Sidebar
