@@ -1,0 +1,18 @@
+.main {
+    margin-left: 320px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+.div_notes {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (width < 920px) {
+    .main {
+        transition: margin 0.4s;
+        margin-left: 122px;
+    } 
+}

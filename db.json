@@ -1,0 +1,17 @@
+{
+    "notes": [],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Teste Categoria 1"
+        },
+        {
+            "id": 2,
+            "name": "Teste Categoria 2"
+        },
+        {
+            "id": 3,
+            "name": "Teste Categoria 3"
+        }
+    ]
+}

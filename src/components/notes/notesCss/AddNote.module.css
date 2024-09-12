@@ -1,0 +1,22 @@
+.main {
+    margin-left: 320px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+.form {
+    padding: 0px 40px 0px 40px;
+    width: 98%;
+    margin: 1.3em 0;
+    border: solid 1px rgb(214, 213, 213);
+    border-radius: 5px;
+    height: 300px;
+}
+
+
+@media (width < 920px) {
+    .main {
+        transition: margin 0.4s;
+        margin-left: 122px;
+    } 
+}

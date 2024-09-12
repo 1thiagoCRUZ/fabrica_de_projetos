@@ -8,6 +8,7 @@
     height: 100%;
     padding: 20px;
     background-color: #fff;
+    transition: all 0.35s;
 }
 
 .sidebar_header {
@@ -121,3 +122,30 @@
 .text_email {
     color: #B8B8B8;
 }
+
+
+
+/* Ajustando sidebar com apenas os ícones*/
+@media (width < 920px) {
+    .sidebar{
+        width: 90px;
+    } 
+    .sidebar_header > span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+     /* Não serviu isso daqui, refatorar depois */
+    .btn_item > span {
+        width: 50px;
+        color: #ddb120;
+    } 
+
+    .sidebar .item > span > span {
+        opacity: 0;
+        visibility: hidden;
+    }
+   
+
+    /* Menu mobile vai ser desenvolvido depois, não é prioridade agora */
+} 
