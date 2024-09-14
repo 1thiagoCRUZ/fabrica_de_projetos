@@ -25,3 +25,16 @@
 #### O que falta:
 - Ainda falta componentizar melhor a Sidebar
 - Refatorar o código de responsividade da Sidebar
+
+
+#### 13/09
+#### O que foi feito:
+- Envio da nota para o 'backend' e a exibição dessas notas na home.
+- Mensagens de sucesso do sistema.
+- Adicionado no componente de notas os icones de edição e exclusão da lógica.
+
+#### O que falta: 
+- Ainda falta componentizar melhor a Sidebar (vai ficar por último)
+- Refatorar o código de responsividade da Sidebar
+- Corrigir bug da mensagem, pois sempre que é realizada uma ação, caso recarreguemos a página ela aparecerá novamente.
+- Lógica para edição e exclusão da nota.
