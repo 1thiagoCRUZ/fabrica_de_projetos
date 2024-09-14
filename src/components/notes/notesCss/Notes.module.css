@@ -3,11 +3,19 @@
     margin-right: 6px;
     overflow: hidden;
 }
+p {
+    font-size: 14px;
+}
 
 .div_notes {
     width: 90%;
     display: flex;
     justify-content: space-between;
+}
+
+.notes {
+    display: flex;
+    margin-top: 20px;
 }
 
 @media (width < 920px) {

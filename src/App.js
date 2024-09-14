@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from "./components/sidebarComponents/Sidebar";
-import AddNote from './components/notes/AddNote';
+import NewNote from './components/notes/NewNote';
 import Home from './components/pages/Home';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/addnote" element={<AddNote />} />
+          <Route path="/newnote" element={<NewNote />} />
 
         </Routes>
     </Router>

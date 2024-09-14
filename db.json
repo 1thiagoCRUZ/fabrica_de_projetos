@@ -1,17 +1,28 @@
 {
-    "notes": [],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Teste Categoria 1"
-        },
-        {
-            "id": 2,
-            "name": "Teste Categoria 2"
-        },
-        {
-            "id": 3,
-            "name": "Teste Categoria 3"
-        }
-    ]
+  "notes": [
+    {
+      "id": "6238",
+      "name": "Fazer prova",
+      "description": "Criei essa nota para me lembrar de que tenho uma prova para fazer de Direito Trabalhista."
+    },
+    {
+      "id": "28a0",
+      "name": "Refatorar código",
+      "description": "Preciso refatorar o código inteiro, pois o mesmo se encontra deveras ruim"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Teste Categoria 1"
+    },
+    {
+      "id": "2",
+      "name": "Teste Categoria 2"
+    },
+    {
+      "id": "3",
+      "name": "Teste Categoria 3"
+    }
+  ]
 }

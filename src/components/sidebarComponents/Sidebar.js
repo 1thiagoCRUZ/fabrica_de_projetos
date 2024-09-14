@@ -6,7 +6,6 @@ import { MdGroup, MdOutlineDashboardCustomize } from "react-icons/md";
 import { BsBox, BsChatSquare } from "react-icons/bs"
 import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
-import Notes from '../notes/Notes'
 import { Link } from 'react-router-dom';
 
 

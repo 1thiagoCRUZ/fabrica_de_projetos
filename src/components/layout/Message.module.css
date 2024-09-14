@@ -1,0 +1,23 @@
+.message {
+    margin-left: 320px;
+    width: 17%;
+    padding: 20px 0px 20px 20px;
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2em;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.01);
+}
+
+.success {
+    border-left: #5dda7a solid 5px;
+    color: #242424;
+    background-color: #ffffff;
+}
+
+.error {
+    color: #e58c8c;
+    background-color: #ebc1c5;
+}
