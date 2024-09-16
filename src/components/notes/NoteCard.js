@@ -4,8 +4,10 @@ import styles from "./notesCss/NoteCard.module.css"
 
 function NoteCard({ id, name, description, handleRemove }) {
     return (
+        
         <div className={styles.note_card}>
             <h4>{name}</h4>
+            <div className={styles.line}></div>
             <span>
                 <p>
                     {description}

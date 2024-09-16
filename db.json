@@ -9,8 +9,12 @@
       "id": "28a0",
       "name": "Refatorar código",
       "description": "Preciso refatorar o código inteiro, pois o mesmo se encontra deveras ruim"
+    },
+    {
+      "id": "fd91",
+      "name": "Revisar Código",
+      "description": "Preciso revisar o código feito pelo Rafa, para analisar a lógica usada."
     }
- 
   ],
   "categories": [
     {
