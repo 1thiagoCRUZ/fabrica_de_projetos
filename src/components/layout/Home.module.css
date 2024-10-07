@@ -1,0 +1,33 @@
+.main {
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 25px;
+    color: #fffffd;
+    font-weight: 500;
+}
+
+.hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background-color: red;
+}
+
+.filter_container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+@media (width < 920px) {
+    .main {
+        transition: margin 0.4s;
+        margin-left: 122px;
+    } 
+}

@@ -1,0 +1,17 @@
+.card_add_task {
+    width: 210px;
+    background-color: #252525;
+    height: 47px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    color: #fffffd;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card_add_task h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
