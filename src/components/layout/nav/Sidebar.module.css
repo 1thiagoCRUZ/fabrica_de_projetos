@@ -1,12 +1,12 @@
 .sidebar {
-    position: fixed; /* Mantém a sidebar fixa na tela */
-    top: 0; /* Alinha ao topo */
-    left: 0; /* Alinha à esquerda */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 268px; /* Largura fixa da sidebar */
-    height: 100vh; /* Ocupa toda a altura da tela */
+    width: 268px;
+    height: 100vh; 
     padding: 20px;
     background-color: #252525;
     transition: all 0.35s;

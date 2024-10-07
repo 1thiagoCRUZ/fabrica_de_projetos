@@ -18,6 +18,11 @@
     margin-right: 5em;
 }
 
+.item:first-child {
+    position: fixed;
+    left:  15%;
+}
+
 .text_welcome a {
     font-size: 11px;
     color: #fffffd;

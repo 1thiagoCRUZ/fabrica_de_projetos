@@ -1,5 +1,5 @@
 .card_add_task {
-    width: 210px;
+    width: 272px;
     background-color: #252525;
     height: 47px;
     border-radius: 5px;
@@ -14,4 +14,11 @@
 .card_add_task h4 {
     font-size: 15px;
     font-weight: 500;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #fffffd;
+    cursor: pointer;
 }

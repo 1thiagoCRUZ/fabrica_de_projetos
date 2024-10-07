@@ -1,8 +1,9 @@
 .main {
-    margin-left: 180px;
     margin-top: 20px;
     margin-right: 6px;
     overflow: hidden;
+    position: fixed;
+    left:  15%;
 }
 
 h2 {
