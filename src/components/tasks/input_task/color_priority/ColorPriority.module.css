@@ -1,0 +1,17 @@
+.color_picker {
+    display: flex;
+    gap: 10px; 
+}
+
+.color_option {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    cursor: pointer;
+    border: 2px solid transparent; 
+    transition: border-color 0.3s; 
+}
+
+.color-option.selected {
+    border-color: #000; 
+}

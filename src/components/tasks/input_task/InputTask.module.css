@@ -1,0 +1,16 @@
+.input_task {
+    background-color: #454545;
+    border: none; 
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px; 
+    outline: none;
+    flex: 1; 
+    width: 560px;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.input_task::placeholder {
+    color: #a5a4a4;
+}

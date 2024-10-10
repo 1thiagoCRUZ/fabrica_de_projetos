@@ -1,0 +1,91 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.color_p_modal {
+    color: #828282;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.modal_content {
+    background-color: #252525;
+    padding: 30px;
+    border-radius: 5px;
+    width: 55%;
+    height: 675px;
+    position: relative;
+    color: #fffffd;
+}
+
+.modal_content h2 {
+    font-size: 22px;
+    text-spacing-trim: normal;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.subdescription p {
+    color: #828282;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 12px;
+    font-variant: initial;
+    text-spacing-trim: space-all;
+}
+
+.content_close {
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    top: 20px;
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: solid 1px #828282;
+    border-radius: 3px;
+}
+
+.close {
+    color: #fffffd;
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: pointer;
+    border: none; 
+    background: none;
+    padding: 0;
+}
+
+.info_for_label p {
+    font-size: 14px;
+    color: #828282;
+    margin-top: 40px;
+}
+
+.label_priority p {
+    font-size: 17px;
+    color: #828282;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.label_priority {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.label_priority span {
+    align-items: end;
+}

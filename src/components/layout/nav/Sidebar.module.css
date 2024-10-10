@@ -107,22 +107,39 @@
 /* Ajustando sidebar com apenas os ícones */
 @media (max-width: 920px) { 
     .sidebar {
-        width: 90px;
+        width: 80px;
     }
     
     .sidebar_header > span {
-        opacity: 0;
-        visibility: hidden;
+        display: none; 
     }
 
+    .btn_item {
+        width: 40px;
+        cursor: pointer;
+        position: relative;
+    }
+    
     .btn_item > span {
         width: 50px;
+        height: 44px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
+        transition: background-color 0.4s, color 0.4s;
+    }
+    
+    .btn_item:hover > span {
+        background-color: #414141;
         color: #ddb120;
     }
 
     .sidebar .item > span > span {
-        opacity: 0;
-        visibility: hidden;
+        display: none; 
+    }
+
+    .sidebar_header {
+        justify-content: center;
     }
 
     /* Menu mobile vai ser desenvolvido depois, não é prioridade agora */
