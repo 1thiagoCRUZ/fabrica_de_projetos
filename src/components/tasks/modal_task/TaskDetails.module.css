@@ -1,0 +1,39 @@
+.textareaContainer {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    position: relative;
+    margin-top: 15px;
+}
+
+.textarea {
+    width: 569px;
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    padding: 13px;
+    background-color: #242424;
+    color: #ffffff;
+    resize: none;
+    outline: none;
+}
+
+.iconBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #242424;
+    border-top: solid 1px #353535;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+}
+
+.icon {
+    color: #5C5C5C;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
