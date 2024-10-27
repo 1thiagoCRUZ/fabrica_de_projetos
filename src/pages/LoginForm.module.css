@@ -8,7 +8,7 @@
 .logo_container {
     position: relative;
     overflow: hidden;
-    width: 806px;
+    width: 203.2%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -29,11 +29,11 @@
 }
 
 .ball1 {
-    animation: moveBall1 4s linear infinite; /* Animação da bolinha 1 */
+    animation: moveBall1 8s linear infinite; /* Animação da bolinha 1 */
 }
 
 .ball2 {
-    animation: moveBall2 4s linear infinite; /* Animação da bolinha 2 */
+    animation: moveBall2 8s linear infinite; /* Animação da bolinha 2 */
 }
 
 @keyframes moveBall1 {
@@ -80,19 +80,19 @@
     75% {
         left: 100%; /* Move para o canto superior direito */
         top: 0;
-        transform: translate(-100%, 0); /* Corrigido para manter a bolinha visível */
+        transform: translate(-100%, 0); /* Mantém a bolinha visível */
     }
     100% {
         left: 100%; /* Retorna ao canto inferior direito */
-        top: 100%;
-        transform: translate(0, 0); /* Corrigido para manter a bolinha visível */
+        top: 105%; /* Ajustado para o canto inferior direito, levemente acima para manter a bolinha visível */
+        transform: translate(-100%, 0); /* Remove o translate aqui para evitar o solavanco */
     }
 }
 
   
 .form_container {
     border: none;
-    width: 634px;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
