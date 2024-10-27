@@ -1,20 +1,30 @@
 import Navbar from "./components/layout/nav/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Container from "./components/Container";
-import Home from "./components/layout/Home";
+import Home from "./pages/Home";
 import Sidebar from "./components/layout/nav/Sidebar";
+import { AuthProvider } from "./routes/AuthContext";
+import LoginForm from "./pages/LoginForm";
+import ProtectedRoute from "./routes/ProtectedRoute";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Sidebar />
-      <Container customClass="min-height">
+    <AuthProvider>
+      <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<LoginForm />} />
+          <Route exact path="/" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <Home />
+              </Container>
+            </ProtectedRoute>
+          } />
         </Routes>
-      </Container>
-    </Router>
+      </Router>
+    </AuthProvider>
   );
 }
 

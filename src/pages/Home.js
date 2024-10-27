@@ -1,7 +1,7 @@
-import styles from '../layout/Home.module.css';
-import AddTask from '../tasks/AddTask';
-import ModalTask from '../tasks/modal_task/ModalTask';
-import Filter from './filter/Filter';
+import styles from './Home.module.css'
+import AddTask from '../components/tasks/AddTask';
+import ModalTask from '../components/tasks/modal_task/ModalTask';
+import Filter from '../components/layout/filter/Filter';
 import { useState } from 'react';
 
 function Home() {
