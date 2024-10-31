@@ -8,7 +8,7 @@
 .logo_container {
     position: relative;
     overflow: hidden;
-    width: 203.2%;
+    width: 60vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -21,19 +21,19 @@
 
 .ball {
     position: absolute;
-    width: 129px; /* Diâmetro da bolinha */
-    height: 127px; /* Diâmetro da bolinha */
-    border-radius: 50%; /* Torna as bolinhas redondas */
-    background-color: #34C759; /* Cor da bolinha */
-    filter: blur(80px); /* Adiciona um efeito de desfoque */
+    width: 129px; 
+    height: 127px; 
+    border-radius: 50%; 
+    background-color: #34C759; 
+    filter: blur(80px); 
 }
 
 .ball1 {
-    animation: moveBall1 8s linear infinite; /* Animação da bolinha 1 */
+    animation: moveBall1 8s linear infinite; 
 }
 
 .ball2 {
-    animation: moveBall2 8s linear infinite; /* Animação da bolinha 2 */
+    animation: moveBall2 8s linear infinite; 
 }
 
 @keyframes moveBall1 {
@@ -83,16 +83,16 @@
         transform: translate(-100%, 0); /* Mantém a bolinha visível */
     }
     100% {
-        left: 100%; /* Retorna ao canto inferior direito */
-        top: 105%; /* Ajustado para o canto inferior direito, levemente acima para manter a bolinha visível */
-        transform: translate(-100%, 0); /* Remove o translate aqui para evitar o solavanco */
+        left: 100%;
+        top: 105%; 
+        transform: translate(-100%, 0); 
     }
 }
 
   
 .form_container {
     border: none;
-    width: 40%;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,13 +116,13 @@ h3 {
 }
   
 
-p {
+.form p {
     color: #d9534f; 
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
-input {
+.form input {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
@@ -134,13 +134,13 @@ input {
     color: #fff;
     transition: border-color 0.3s;
 }
-input::placeholder {
+.form input::placeholder {
     color: #fff;
     font-weight: lighter;
     font-size: smaller;
 }
   
-input:focus {
+.form input:focus {
     border-color: #34C759; 
 }
   

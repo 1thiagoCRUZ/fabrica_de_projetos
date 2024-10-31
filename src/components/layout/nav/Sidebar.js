@@ -2,6 +2,7 @@ import styles from './Sidebar.module.css'
 
 import { FiHome, FiUserPlus } from "react-icons/fi"
 import { MdGroup, MdOutlineDashboardCustomize } from "react-icons/md";
+import { BiVideo } from "react-icons/bi";
 import { BsBox, BsChatSquare } from "react-icons/bs"
 import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
@@ -68,6 +69,14 @@ function Sidebar() {
                             <span className={styles.btn_item}>
                                 <BsChatSquare />
                                 <span>Chat</span>
+                            </span>
+                        </li>
+
+                        <li className={styles.item}>
+                            {/* Colocar o Link aqui na Nav */}
+                            <span className={styles.btn_item}>
+                                <BiVideo className={styles.icone_video}/>
+                                <span>Chamada</span>
                             </span>
                         </li>
                     </ul>

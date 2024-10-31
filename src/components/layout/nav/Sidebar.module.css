@@ -76,13 +76,18 @@
     color: #ddb120;
 }
 
+.icone_video {
+    font-size: 20px;
+}
+
 /* Mais itens mais abaixo do primeiro menu */
 .sidebar_list_down {
     padding: 0;
     list-style: none;
     width: 100%;
     color: #fff;
-    margin-bottom: 40%; 
+    margin-top: 20vh;
+    margin-bottom: 10%; 
 }
 
 .btn_item_list_down {
