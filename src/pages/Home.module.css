@@ -3,7 +3,7 @@
     margin-right: 6px;
     overflow: hidden;
     position: fixed;
-    left:  15%;
+    left: 19.5vw;
 }
 
 h2 {
@@ -23,11 +23,12 @@ h2 {
 
 .filter_container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Garante que os itens não quebrem para a linha seguinte */
     flex-direction: row;
-    overflow-x: auto;
-    gap: 25px;
+    overflow-x: auto; /* Permite a rolagem horizontal */
+    gap: 25px; /* Ajuste o espaçamento conforme necessário */
     max-width: 100%;
+    padding: 10px; /* Adicione um pouco de padding ao redor */
 }
 
 @media (max-width: 920px) {
@@ -37,7 +38,7 @@ h2 {
     } 
 
     .filter_container {
-        max-width: 100%;
+        max-width: 90%;
         overflow-x: auto;
     }
 }

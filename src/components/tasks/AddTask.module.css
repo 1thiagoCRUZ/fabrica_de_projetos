@@ -1,5 +1,5 @@
 .card_add_task {
-    width: 272px;
+    width: 18vw;
     background-color: #252525;
     height: 47px;
     border-radius: 5px;
@@ -22,3 +22,17 @@ button {
     color: #fffffd;
     cursor: pointer;
 }
+
+.status_text {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+
+.status_dot {
+    width: 6px; 
+    height: 6px;
+    border-radius: 50%;
+}
+
+

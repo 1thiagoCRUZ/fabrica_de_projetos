@@ -21,10 +21,7 @@ function ModalTask({ show, handleClose }) {
 
                     <h2>Create new task</h2>
                     <TaskDetailsInput />
-
                     <ModalBottomDetails />
-
-
                 </div>
 
                 <div className={styles.right_content}>

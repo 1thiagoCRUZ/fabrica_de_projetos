@@ -1,4 +1,4 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 
 const AuthContext = createContext();
 
@@ -9,14 +9,25 @@ export const AuthProvider = ({ children }) => {
         token: null,
         isAuthenticated: false,
     });
+    const [loading, setLoading] = useState(true);
 
-    // Lógica para realizar o login
+    useEffect(() => {
+        const storedToken = localStorage.getItem('token');
+        if (storedToken) {
+            setAuth({
+                token: storedToken,
+                isAuthenticated: true,
+            });
+        }
+        setLoading(false); // Marca o carregamento inicial como concluído
+    }, []);
+
     const login = (token) => {
         setAuth({
             token,
             isAuthenticated: true,
         });
-        localStorage.setItem('token', token) // Usando o localstorage para conseguir armazenar o token
+        localStorage.setItem('token', token);
     };
 
     const logout = () => {
@@ -28,7 +39,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     return (
-        <AuthContext.Provider value={{ auth, login, logout}}>
+        <AuthContext.Provider value={{ auth, login, logout, loading }}>
             {children}
         </AuthContext.Provider>
     );

@@ -18,13 +18,14 @@ function Home() {
         <main className={styles.main}>
             <h2>Organize-se</h2>
             <Filter />
-            
+
             <div className={styles.filter_container}>
-                <AddTask status="Para fazer" handleShow={handleShow} />
-                <AddTask status="in Progresso" handleShow={handleShow} />
+                <AddTask status="Para Fazer" handleShow={handleShow} />
+                <AddTask status="In Progresso" handleShow={handleShow} />
                 <AddTask status="Concluído" handleShow={handleShow} />
                 <AddTask status="Revisar" handleShow={handleShow} />
             </div>
+
 
             <ModalTask show={showModal} handleClose={handleClose} />
         </main>

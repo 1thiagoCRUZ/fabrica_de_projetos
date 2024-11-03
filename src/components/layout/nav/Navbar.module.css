@@ -1,26 +1,22 @@
 .navbar {
     display: flex;
-    width: calc(100% - 268px); 
+    width: 81.5vw; 
     background-color: #252525;
     padding: 0.7em;
     height: 70px;
-    margin-left: 268px; 
+    margin-left: 18.5vw; 
     align-items: center;
+    justify-content: space-between; 
+    position: relative;
 }
 
 .list {
     display: flex;
     list-style: none;
-    align-items: center;
 }
 
 .item {
-    margin-right: 5em;
-}
-
-.item:first-child {
-    position: fixed;
-    left:  15%;
+    margin-right: 6em;
 }
 
 .text_welcome a {
@@ -39,16 +35,16 @@
     height: 40px;
     display: flex; 
     align-items: center; 
-    width: 695px;
+    width: 50vw;
     background-color: #353535; 
     border-radius: 5px;
-    overflow: hidden;
     color: #828282;
+    justify-content: center;
 }
+
 .icon {
     padding: 10px; 
     color: #828282; 
-    margin-top: 3px;
 }
 
 .search_input {
@@ -81,4 +77,10 @@
 
 .user_image img {
     width: 40px;
+}
+
+@media (max-width: 920px) { 
+    .navbar {
+        display: none; 
+    }
 }
