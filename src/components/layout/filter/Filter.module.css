@@ -1,8 +1,7 @@
 .filter_container {
-    margin-top: 7px;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 20px;
+
 }
 
 .filter_btn {
@@ -11,7 +10,7 @@
     color: #fff;
     cursor: pointer;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     background-color: transparent;
 }
 

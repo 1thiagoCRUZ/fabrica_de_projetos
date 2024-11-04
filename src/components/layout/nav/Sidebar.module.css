@@ -40,7 +40,7 @@
 .sidebar_list {
     padding: 0;
     list-style: none;
-    width: 225px; 
+    width: 15vw;
     color: #fff;
     margin-bottom: 13vh; 
 }
@@ -55,6 +55,7 @@
 
 .item {
     color: #fff;
+    width: 15vw;
     margin-bottom: 4px;
 }
 

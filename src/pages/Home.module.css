@@ -3,32 +3,33 @@
     margin-right: 6px;
     overflow: hidden;
     position: fixed;
-    left: 19.5vw;
+    left: 18.5vw;
+    padding-left: 30px;
+}
+
+.text_welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 25px;
     color: #fffffd;
     font-weight: 500;
-}
-
-.hr {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 3px;
-    background-color: red;
+    margin-right: 30px;
 }
 
 
 .filter_container {
     display: flex;
-    flex-wrap: nowrap; /* Garante que os itens não quebrem para a linha seguinte */
+    flex-wrap: nowrap; 
     flex-direction: row;
-    overflow-x: auto; /* Permite a rolagem horizontal */
-    gap: 25px; /* Ajuste o espaçamento conforme necessário */
+    overflow-x: auto; 
+    gap: 25px; 
     max-width: 100%;
-    padding: 10px; /* Adicione um pouco de padding ao redor */
+    padding: 0;
 }
 
 @media (max-width: 920px) {

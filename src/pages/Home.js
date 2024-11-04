@@ -16,8 +16,10 @@ function Home() {
 
     return (
         <main className={styles.main}>
-            <h2>Organize-se</h2>
-            <Filter />
+            <div className={styles.text_welcome}>
+                <h2>Organize-se</h2>
+                <Filter />
+            </div>
 
             <div className={styles.filter_container}>
                 <AddTask status="Para Fazer" handleShow={handleShow} />

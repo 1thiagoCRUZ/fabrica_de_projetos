@@ -17,7 +17,7 @@ function ModalTask({ show, handleClose }) {
                     <button className={styles.close} onClick={handleClose}>&times;</button>
                 </div>
                 <div className={styles.left_content}>
-                    <p className={styles.color_p_modal}>Projetos / Novas task</p>
+                    <p className={styles.color_p_modal}>Projetos / Nova task</p>
 
                     <h2>Create new task</h2>
                     <TaskDetailsInput />
