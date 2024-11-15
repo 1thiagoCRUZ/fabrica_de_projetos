@@ -8,6 +8,7 @@ import { IoNotificationsOutline, IoSettingsOutline } from "react-icons/io5";
 import { IoMdLogOut } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import logoAvivatec from '../../../img/avivateclogo.svg'
+import SidebarLogout from './sidebar_logout/SidebarLogout';
 
 
 function Sidebar() {
@@ -99,14 +100,7 @@ function Sidebar() {
                     </ul>
 
                     {/* Espaço abaixo para as informações do usuário e o logout */}
-                    <ul className={styles.sidebar_list_down_logout}>
-                        <li className={styles.item_list_down}>
-                            <span className={styles.btn_item_list_down}>
-                                <IoMdLogOut />
-                                <span>Logout</span>
-                            </span>
-                        </li>
-                    </ul>
+                    <SidebarLogout />
                 </nav>
             </aside>
         </>

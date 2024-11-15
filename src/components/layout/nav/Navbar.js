@@ -2,6 +2,7 @@ import Container from "../../Container"
 import { FiSearch } from "react-icons/fi";
 import styles from './Navbar.module.css'
 import { IoNotificationsOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import user_image from '../../../img/user_image.png'
 
 function Navbar() {
@@ -26,7 +27,9 @@ function Navbar() {
                     <li className={styles.item_not_image}>
                         <span className={styles.span_top_user}>
                             <span className={styles.notification_icon}><IoNotificationsOutline /></span>
-                            <span><img src={user_image} /></span>
+                            <span><Link to="/profile_user">
+                                <span><img src={user_image} alt="User Profile" /></span>
+                            </Link></span>
                         </span>
                     </li>
                 </ul>

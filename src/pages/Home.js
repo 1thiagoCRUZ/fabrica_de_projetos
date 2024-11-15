@@ -3,6 +3,7 @@ import AddTask from '../components/tasks/AddTask';
 import ModalTask from '../components/tasks/modal_task/ModalTask';
 import Filter from '../components/layout/filter/Filter';
 import { useState } from 'react';
+import UserProfile from '../components/userProfile/UserProfile';
 
 function Home() {
     // Estado para controlar a visibilidade do modal
@@ -30,6 +31,7 @@ function Home() {
 
 
             <ModalTask show={showModal} handleClose={handleClose} />
+
         </main>
     );
 }

@@ -6,6 +6,7 @@ import Sidebar from "./components/layout/nav/Sidebar";
 import { AuthProvider } from "./routes/AuthContext";
 import LoginForm from "./pages/LoginForm";
 import ProtectedRoute from "./routes/ProtectedRoute";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -13,6 +14,15 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/login" element={<LoginForm />} />
+          <Route path="/profile_user" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <Profile /> 
+              </Container>
+            </ProtectedRoute>
+          } />
           <Route exact path="/" element={
             <ProtectedRoute>
               <Navbar />
