@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { IoMdLogOut } from 'react-icons/io';
-import styles from '../Navbar.module.css';
+import styles from '../Sidebar.module.css';
 import { useAuth } from '../../../../routes/AuthContext';
 import { useNavigate } from 'react-router-dom';
 

@@ -45,6 +45,11 @@
     margin-bottom: 13vh; 
 }
 
+.sidebar a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
 .sidebar span {
     display: inline-flex;
     align-items: center;
@@ -100,13 +105,25 @@
 }
 
 .sidebar_list_down_logout {
-    padding: 0;
+    padding: 12px 0; 
     list-style: none;
-    width: 15%; 
+    width: 15%;
     color: #fff;
     position: fixed;
     bottom: 10px;
 }
+
+.sidebar_list_down_logout button span {
+    font-size: 15px; 
+   
+}
+
+.sidebar_list_down_logout button svg {
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+
 
 /* Ajustando sidebar com apenas os ícones */
 @media (max-width: 920px) { 

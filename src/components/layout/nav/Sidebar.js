@@ -27,10 +27,12 @@ function Sidebar() {
 
                     <ul className={styles.sidebar_list}>
                         <li className={styles.item}>
+                            <Link to="/">
                             <span className={styles.btn_item}>
                                 <FiHome />
                                 <span>Home</span>
                             </span>
+                            </Link>
                         </li>
 
                         <li className={styles.item}>
