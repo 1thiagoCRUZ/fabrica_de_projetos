@@ -2,8 +2,9 @@ import { useState } from "react";
 import styles from './ModalBottomDetails.module.css'
 import { MdChecklist } from "react-icons/md";
 
-function ModalBottomDetails() {
+function ModalBottomDetails({  taskName, setTaskName }) {
     const [subtasks, setSubtasks] = useState(['Desenvolver o design do app', 'Responsividade', 'Protótipo']);
+
     const [newSubtask, setNewSubtask] = useState('');
 
     const handleAddSubtask = () => {
@@ -30,17 +31,18 @@ function ModalBottomDetails() {
                 ))}
             </ul>
 
+
             <div className={styles.subtaskInputContainer}>
                 <input
                     type="text"
-                    value={newSubtask}
-                    onChange={(e) => setNewSubtask(e.target.value)}
-                    placeholder="Teste de UX/UI"
+                    value={taskName}
+                    onChange={(e) => setTaskName(e.target.value)} 
+                    placeholder="Nome da tarefa"
                     className={styles.subtaskInput}
                 />
             </div>
         </div>
-    )
+    );
 }
 
-export default ModalBottomDetails
+export default ModalBottomDetails;

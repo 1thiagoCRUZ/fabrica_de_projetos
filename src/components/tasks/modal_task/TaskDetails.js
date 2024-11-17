@@ -3,12 +3,14 @@ import { FaPaperclip } from 'react-icons/fa';
 import { FaRegFaceGrin } from "react-icons/fa6";
 import { RiImageAddFill } from "react-icons/ri";
 
-function TaskDetailsInput() {
+function TaskDetailsInput( {details, setDetails}) {
   return (
     <div className={styles.textareaContainer}>
       <textarea
         className={styles.textarea}
         placeholder="Detalhes da task..."
+        value={details}
+        onChange={(e) => setDetails(e.target.value)}
       />
       <div className={styles.iconBar}>
         <FaPaperclip className={styles.icon} title="Anexar arquivo" />

@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './PriorityTask.module.css';
 
-function PriorityTask() {
-    const [status, setStatus] = useState('');
-
+function PriorityTask( {priority, setPriority} ) {
     const handleChange = (event) => {
-        setStatus(event.target.value);
+        setPriority(event.target.value); // Atualiza o valor da prioridade no componente pai
     };
+
     const getSelectClass = () => {
-        switch (status) {
+        switch (priority) {
             case 'baixa':
                 return styles.selectBaixa;
             case 'media':
@@ -24,7 +23,7 @@ function PriorityTask() {
         <div className={styles.selectContainer}>
             <select
                 className={`${styles.styledSelect} ${getSelectClass()}`}
-                value={status}
+                value={priority} 
                 onChange={handleChange}
             >
                 <option value="" disabled>

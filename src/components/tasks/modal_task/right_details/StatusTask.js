@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './StatusTask.module.css';
 
-function StatusTask() {
-    const [status, setStatus] = useState('');
-
+function StatusTask({ status, setStatus }) {
     const handleChange = (event) => {
         setStatus(event.target.value);
     };
@@ -38,6 +36,6 @@ function StatusTask() {
             </select>
         </div>
     );
-};
+}
 
 export default StatusTask;

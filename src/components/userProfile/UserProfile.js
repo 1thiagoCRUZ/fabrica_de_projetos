@@ -38,6 +38,10 @@ function UserProfile() {
 
                 const data = await response.json();
                 setUserProfile(data[0]);
+
+                if (data[0]?.id) {
+                    localStorage.setItem('user_id', data[0].id);
+                }
             } catch (err) {
                 setError(err.message);
             } finally {

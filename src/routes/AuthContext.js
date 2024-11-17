@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
                 isAuthenticated: true,
             });
         }
-        setLoading(false); // Marca o carregamento inicial como concluído
+        setLoading(false); 
     }, []);
 
     const login = (token) => {
