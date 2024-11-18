@@ -3,7 +3,7 @@ import AddTask from '../components/tasks/AddTask';
 import ModalTask from '../components/tasks/modal_task/ModalTask';
 import Filter from '../components/layout/filter/Filter';
 import { useState } from 'react';
-import UserProfile from '../components/userProfile/UserProfile';
+import GetTasks from '../components/tasks/get_task/GetTasks';
 
 function Home() {
     // Estado para controlar a visibilidade do modal
@@ -29,9 +29,8 @@ function Home() {
                 <AddTask status="Revisar" handleShow={handleShow} />
             </div>
 
-
+            <GetTasks />
             <ModalTask show={showModal} handleClose={handleClose} />
-
         </main>
     );
 }

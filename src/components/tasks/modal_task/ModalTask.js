@@ -6,11 +6,11 @@ import ModalBottomDetails from './modal_bottom_details/ModalBottomDetails';
 import StatusTask from './right_details/StatusTask';
 import PriorityTask from './right_details/PriorityTask';
 import DateTask from './right_details/DateTask';
+import { toast } from 'react-toastify';
 
 function ModalTask({ show, handleClose }) {
-    const [taskName, setTaskName] = useState(''); // Nome da task
+    const [taskName, setTaskName] = useState(''); 
     const [details, setDetails] = useState('');
-    const [subtasks, setSubtasks] = useState(['Desenvolver o design do app', 'Responsividade', 'Protótipo']);
     const [priority, setPriority] = useState('');
     const [status, setStatus] = useState('');
     const [finalDate, setFinalDate] = useState(null);
@@ -29,9 +29,10 @@ function ModalTask({ show, handleClose }) {
                 title_task: taskName,
                 description_task: details,
                 prioridade: priority,
-                data_final: finalDate,
+                data_final: finalDate ? finalDate.toISOString() : null,  
                 status_task: status,
             };
+            
         
             console.log(taskData);
 
@@ -50,6 +51,13 @@ function ModalTask({ show, handleClose }) {
             const data = await response.json();
             console.log('Task criada com sucesso:', data);
             handleClose();
+            toast.success('Task criada com sucesso!', {
+                style: {
+                    backgroundColor: '#252525',
+                    color: '#fff',
+                }
+            });
+            
         } catch (error) {
             console.error('Erro ao criar a task:', error);
             alert('Não foi possível criar a task.');
@@ -73,8 +81,6 @@ function ModalTask({ show, handleClose }) {
                         setDetails={setDetails}
                     />
                     <ModalBottomDetails
-                        subtasks={subtasks}
-                        setSubtasks={setSubtasks}
                         taskName={taskName}
                         setTaskName={setTaskName}
                     />

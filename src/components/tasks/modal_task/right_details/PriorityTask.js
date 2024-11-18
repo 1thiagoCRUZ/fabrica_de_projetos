@@ -3,7 +3,7 @@ import styles from './PriorityTask.module.css';
 
 function PriorityTask( {priority, setPriority} ) {
     const handleChange = (event) => {
-        setPriority(event.target.value); // Atualiza o valor da prioridade no componente pai
+        setPriority(event.target.value); 
     };
 
     const getSelectClass = () => {

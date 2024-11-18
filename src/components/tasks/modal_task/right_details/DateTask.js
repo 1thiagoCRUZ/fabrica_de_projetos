@@ -2,6 +2,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styles from './DateTask.module.css';
 
+
 function DateTask({ finalDate, setFinalDate }) {
   const formatDate = (date) => {
     if (!date) return '';
@@ -10,6 +11,8 @@ function DateTask({ finalDate, setFinalDate }) {
     const year = date.getFullYear();
     return `${day}-${month}-${year}`;
   };
+
+
 
   return (
     <DatePicker

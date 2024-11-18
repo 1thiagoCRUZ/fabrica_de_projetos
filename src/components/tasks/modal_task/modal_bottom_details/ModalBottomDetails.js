@@ -37,7 +37,7 @@ function ModalBottomDetails({  taskName, setTaskName }) {
                     type="text"
                     value={taskName}
                     onChange={(e) => setTaskName(e.target.value)} 
-                    placeholder="Nome da tarefa"
+                    placeholder="Nome da task..."
                     className={styles.subtaskInput}
                 />
             </div>

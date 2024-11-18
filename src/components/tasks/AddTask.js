@@ -3,7 +3,6 @@ import { MdOutlineAdd } from "react-icons/md";
 import { IoMdMore } from "react-icons/io";
 
 function AddTask({ status, handleShow }) {
-    // Mapeamento de cores para cada status
     const statusColors = {
         "Para Fazer": "#E93838",
         "In Progresso": "#2B85D8",

@@ -7,11 +7,14 @@ import { AuthProvider } from "./routes/AuthContext";
 import LoginForm from "./pages/LoginForm";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import Profile from "./pages/Profile";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
     <AuthProvider>
       <Router>
+      <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} theme="colored" />
         <Routes>
           <Route exact path="/login" element={<LoginForm />} />
           <Route path="/profile_user" element={
