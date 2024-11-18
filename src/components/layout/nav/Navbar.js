@@ -10,9 +10,9 @@ function Navbar() {
         <nav className={styles.navbar}>
             <Container>
                 <ul className={styles.list}>
-                    <li className={styles.item}>
-                        <span className={styles.text_welcome}><a>Olá, bem vindo</a></span>
-                        <p className={styles.name_user}>Fulano da Silva</p>
+                    <li className={styles.item_name}>      
+                            <span className={styles.text_welcome}><a>Olá, bem vindo</a></span>
+                            <span className={styles.text_welcome}><p className={styles.name_user}>Fulano da Silva</p></span>
                     </li>
 
                     <li className={styles.item}>

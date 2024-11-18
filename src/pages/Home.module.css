@@ -6,34 +6,34 @@
     margin-right: 6px;  
     bottom: 0;
     overflow-y: auto;
-    left: 18.5vw;
+    left: 17vw;
     padding-left: 30px;
 }
 
-/* Aplica estilos à barra de rolagem no .main */
+
 .main::-webkit-scrollbar {
     width: 8px; 
 }
 
 .main::-webkit-scrollbar-track {
-    background: #2c2c2c; /* Cor do fundo da barra de rolagem */
-    border-radius: 4px; /* Bordas arredondadas */
+    background: #2c2c2c; 
+    border-radius: 4px; 
 }
 
 .main::-webkit-scrollbar-thumb {
-    background: #888; /* Cor do indicador da barra */
-    border-radius: 4px; /* Deixa o indicador arredondado */
-    transition: background 0.3s ease; /* Transição suave */
+    background: #888; 
+    border-radius: 4px; 
+    transition: background 0.3s ease; 
 }
 
 .main::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Cor ao passar o mouse */
+    background: #555; 
 }
 
-/* Para navegadores que suportam scrollbar-color */
+
 .main {
-    scrollbar-color: #888 #2c2c2c; /* Indicador e fundo */
-    scrollbar-width: thin; /* Faz a barra de rolagem ficar mais fina */
+    scrollbar-color: #888 #2c2c2c; 
+    scrollbar-width: thin; 
 }
 
 
