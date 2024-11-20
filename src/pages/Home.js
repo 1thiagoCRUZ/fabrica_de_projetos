@@ -1,4 +1,4 @@
-import styles from './Home.module.css'
+import styles from './Home.module.css';
 import AddTask from '../components/tasks/AddTask';
 import ModalTask from '../components/tasks/modal_task/ModalTask';
 import Filter from '../components/layout/filter/Filter';
@@ -19,7 +19,7 @@ function Home() {
         <main className={styles.main}>
             <div className={styles.text_welcome}>
                 <h2>Organize-se</h2>
-                <Filter />
+                <Filter btnText="New Task" handleShow={handleShow} />
             </div>
 
             <div className={styles.filter_container}>

@@ -9,6 +9,7 @@ import ProtectedRoute from "./routes/ProtectedRoute";
 import Profile from "./pages/Profile";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
+import Notes from "./pages/Notes";
 
 function App() {
   return (
@@ -17,6 +18,18 @@ function App() {
       <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} theme="colored" />
         <Routes>
           <Route exact path="/login" element={<LoginForm />} />
+
+          <Route path="/notes" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <Notes /> 
+              </Container>
+            </ProtectedRoute>
+          } />
+
+
           <Route path="/profile_user" element={
             <ProtectedRoute>
               <Navbar />
@@ -26,6 +39,8 @@ function App() {
               </Container>
             </ProtectedRoute>
           } />
+
+
           <Route exact path="/" element={
             <ProtectedRoute>
               <Navbar />

@@ -1,0 +1,75 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1D1D1DBA;
+}
+
+.modal_content {
+    background-color: #353535;
+    border-radius: 5px;
+    width: 50vw;
+    height: 612px;
+    position: relative;
+    color: #fffffd;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_modal {
+    padding: 30px;
+}
+
+.input_container {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content_close {
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    top: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #828282;
+    border-radius: 3px;
+}
+
+.close {
+    color: #fffffd;
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+
+.buttons_note {
+    padding: 30px;
+    margin-top: auto; 
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between; 
+}
+.create_note {
+    background-color: #FFCC00;
+    width: 126px;
+    color: #242424;
+    font-weight: 600;
+    border-radius: 5px;
+    height: 41px;
+}

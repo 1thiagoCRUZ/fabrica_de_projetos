@@ -1,0 +1,9 @@
+.btn_filter_container {
+    display: flex;
+    width: 122px;
+    height: 44px;
+    background-color: #252525;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}

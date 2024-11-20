@@ -1,0 +1,18 @@
+.text_welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80vw;
+    padding: 8px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #fffffd;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+
+

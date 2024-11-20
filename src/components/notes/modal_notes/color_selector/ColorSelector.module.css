@@ -1,0 +1,25 @@
+.color_selector {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}
+
+.color_circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2.5px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.color_circle:hover {
+    transform: scale(1.1);
+}
+
+.color_circle.selected {
+    border-color: #fff;
+}
+

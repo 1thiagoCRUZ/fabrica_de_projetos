@@ -1,11 +1,12 @@
 .filter_container {
+    width: 83%;
     display: flex;
-    justify-content: flex-start;
-
+    align-items: center;
+    padding: 8px;
 }
 
 .filter_btn {
-    padding: 10px 35px 10px 0px;
+    padding: 10px 30px 10px 0px;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -14,3 +15,15 @@
     background-color: transparent;
 }
 
+a {
+    text-decoration: none;
+}
+
+span {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn_filter_text {
+    margin-left: auto; 
+}
