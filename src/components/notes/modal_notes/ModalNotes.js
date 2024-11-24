@@ -41,7 +41,7 @@ function ModalNotes({ show, handleClose }) {
             const data = await response.json();
             console.log('Nota criada com sucesso: ', data);
             handleClose();
-            toast.success('Task criada com sucesso!', {
+            toast.success('Nota criada com sucesso!', {
                 style: {
                     backgroundColor: '#252525',
                     color: '#fff',

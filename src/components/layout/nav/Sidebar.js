@@ -23,15 +23,14 @@ function Sidebar() {
                 </header>
 
                 <nav>
-                    {/* Colocar o Link aqui na Nav */}
 
                     <ul className={styles.sidebar_list}>
                         <li className={styles.item}>
                             <Link to="/">
-                            <span className={styles.btn_item}>
-                                <FiHome />
-                                <span>Home</span>
-                            </span>
+                                <span className={styles.btn_item}>
+                                    <FiHome />
+                                    <span>Home</span>
+                                </span>
                             </Link>
                         </li>
 
@@ -44,11 +43,12 @@ function Sidebar() {
                         </li>
 
                         <li className={styles.item}>
-                            {/* Colocar o Link aqui na Nav */}
-                            <span className={styles.btn_item}>
-                                <BsBox />
-                                <span>Consultas</span>
-                            </span>
+                            <Link to="/consultas">
+                                <span className={styles.btn_item}>
+                                    <BsBox />
+                                    <span>Consultas</span>
+                                </span>
+                            </Link>
                         </li>
 
                         <li className={styles.item}>
@@ -78,7 +78,7 @@ function Sidebar() {
                         <li className={styles.item}>
                             {/* Colocar o Link aqui na Nav */}
                             <span className={styles.btn_item}>
-                                <BiVideo className={styles.icone_video}/>
+                                <BiVideo className={styles.icone_video} />
                                 <span>Chamada</span>
                             </span>
                         </li>

@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react"
-
+import styles from './GetNotes.module.css'
 import loading_svg from '../../../img/loading.svg'
+import { IoMdMore } from "react-icons/io";
 
 function GetNotes() {
     const [notes, setNotes] = useState([]);
@@ -46,18 +47,27 @@ function GetNotes() {
     }
 
     return (
-        <div>
+        <div className={styles.note_container}>
             {notes.length > 0 ? (
-                <ul>
+                <ul className={styles.ul_note}>
                     {notes.map((note) => (
-                        <li key={note.id}>
-                            <div>COR</div>
+                        <li key={note.id} className={styles.note_card}>
+                            <div className={styles.color_container}></div>
 
-                            <div>
-                                <h3>{note.title_note}</h3>
+                            <div className={styles.card_header}>
+                                <span>
+                                    <div className={styles.note_title_container}>
+                                        <h3 className={styles.note_title}>{note.title_note}</h3>
+                                    </div>
+                                </span>
+                                <span>
+                                    <IoMdMore />
+                                </span>
                             </div>
 
-                            <p>{note.description_note}</p>
+
+
+                            <p className={styles.note_description}>{note.description_note}</p>
                         </li>
                     ))}
                 </ul>

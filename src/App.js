@@ -10,12 +10,13 @@ import Profile from "./pages/Profile";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 import Notes from "./pages/Notes";
+import Consultas from "./pages/Consultas";
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-      <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} theme="colored" />
+        <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} theme="colored" />
         <Routes>
           <Route exact path="/login" element={<LoginForm />} />
 
@@ -24,7 +25,17 @@ function App() {
               <Navbar />
               <Sidebar />
               <Container customClass="min-height">
-                <Notes /> 
+                <Notes />
+              </Container>
+            </ProtectedRoute>
+          } />
+
+          <Route path="/consultas" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <Consultas />
               </Container>
             </ProtectedRoute>
           } />
@@ -35,7 +46,7 @@ function App() {
               <Navbar />
               <Sidebar />
               <Container customClass="min-height">
-                <Profile /> 
+                <Profile />
               </Container>
             </ProtectedRoute>
           } />
