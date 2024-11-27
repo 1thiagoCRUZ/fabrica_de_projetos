@@ -1,7 +1,7 @@
 
 .tasks_container {
     margin-top: 20px;
-    padding-right: 18px;
+    padding-right: 3.2vw;
 }
 
 .tasks_container svg {
@@ -14,7 +14,7 @@
     margin: 0;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18vw, 1fr));
 }
   
 .task_card {

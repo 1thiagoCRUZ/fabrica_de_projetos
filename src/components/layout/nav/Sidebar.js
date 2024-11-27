@@ -76,11 +76,12 @@ function Sidebar() {
                         </li>
 
                         <li className={styles.item}>
-                            {/* Colocar o Link aqui na Nav */}
+                            <Link to="https://video-chamada-r6rl.onrender.com">
                             <span className={styles.btn_item}>
                                 <BiVideo className={styles.icone_video} />
                                 <span>Chamada</span>
                             </span>
+                            </Link>
                         </li>
                     </ul>
 

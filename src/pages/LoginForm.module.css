@@ -103,8 +103,10 @@
 }
 
 .form {
+    align-items: center;
+    justify-content: center;
     width: 90%;
-    height: 70%;
+    height: 60%;
 }
  
 h3 {
@@ -127,7 +129,7 @@ h3 {
     padding: 0.8rem;
     margin-bottom: 1rem;
     border: 1px solid #242424;
-    border-radius: 4px;
+    border-radius: 2px;
     font-size: smaller;
     background-color: #242424;
     outline: none;
@@ -150,9 +152,9 @@ h3 {
     width: 100%;
     padding: 0.8rem;
     background-color: #34C759;
-    color: #fff;
+    color: hsl(0, 0%, 100%);
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
