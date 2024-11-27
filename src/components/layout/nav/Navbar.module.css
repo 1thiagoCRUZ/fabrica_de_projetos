@@ -82,8 +82,10 @@
     cursor: pointer;
 }
 
-.user_image img {
-    width: 40px;
+.imguser_content img {
+    width: 43px; 
+    border-radius: 50%;
+    height: 43px;
 }
 
 @media (max-width: 1629) {

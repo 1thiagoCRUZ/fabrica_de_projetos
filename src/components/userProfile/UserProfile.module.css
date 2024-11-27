@@ -1,19 +1,18 @@
 .content_profile {
     width: 75vw;
     margin-left: 18px;
-    height: 60vh;
+    height: auto;
     background-color: #252525;
     border-radius: 10px;
     display: flex;
     flex-direction: column;  
-    padding: 30px;
+    padding: 40px;
     padding-left: 45px;
     padding-right: 45px;
     position: relative;
 }
 
 .content_profile .loading {
-    margin-top: 2.5vw;
     align-self: center;  
     justify-content: center;
 }
