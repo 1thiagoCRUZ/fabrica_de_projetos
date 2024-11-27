@@ -3,51 +3,52 @@ import { FiSearch } from "react-icons/fi";
 import styles from './Navbar.module.css'
 import { IoNotificationsOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { useAuth } from "../../../routes/AuthContext";
+import img_user from '../../../img/user_image.png'
+// import { useEffect, useState } from "react";
+// import { useAuth } from "../../../routes/AuthContext";
 
 function Navbar() {
-    const [userProfile, setUserProfile] = useState(null);
-    const [error, setError] = useState(null);
+    // const [userProfile, setUserProfile] = useState(null);
+    // const [error, setError] = useState(null);
 
-    const { auth } = useAuth();
-    const token = auth?.token;
-    useEffect(() => {
-        console.log("Token enviado:", token);
-        const fetchUserProfile = async () => {
-            try {
+    // const { auth } = useAuth();
+    // const token = auth?.token;
+    // useEffect(() => {
+    //     console.log("Token enviado:", token);
+    //     const fetchUserProfile = async () => {
+    //         try {
 
-                if (!token) {
-                    setError('Token do usuário não foi encontrado');
+    //             if (!token) {
+    //                 setError('Token do usuário não foi encontrado');
 
-                    return;
-                }
+    //                 return;
+    //             }
 
-                const response = await fetch("https://api-authetication-jwt.onrender.com/user_profile", {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        Authorization: `Bearer ${token}`,
-                    },
-                });
+    //             const response = await fetch("https://api-authetication-jwt.onrender.com/user_profile", {
+    //                 method: 'GET',
+    //                 headers: {
+    //                     'Content-Type': 'application/json',
+    //                     Authorization: `Bearer ${token}`,
+    //                 },
+    //             });
 
-                if (!response.ok) {
-                    throw new Error(`Erro: ${response.status} - ${response.statusText}`);
-                }
+    //             if (!response.ok) {
+    //                 throw new Error(`Erro: ${response.status} - ${response.statusText}`);
+    //             }
 
-                const data = await response.json();
-                setUserProfile(data[0]);
+    //             const data = await response.json();
+    //             setUserProfile(data[0]);
 
-                if (data[0]?.id) {
-                    localStorage.setItem('user_id', data[0].id);
-                }
-            } catch (err) {
-                setError(err.message);
-            }
-        };
+    //             if (data[0]?.id) {
+    //                 localStorage.setItem('user_id', data[0].id);
+    //             }
+    //         } catch (err) {
+    //             setError(err.message);
+    //         }
+    //     };
 
-        fetchUserProfile();
-    }, [token]);
+    //     fetchUserProfile();
+    // }, [token]);
 
     return (
         <nav className={styles.navbar}>
@@ -72,7 +73,7 @@ function Navbar() {
                             <span className={styles.notification_icon}><IoNotificationsOutline /></span>
                             <span><Link to="/profile_user">
                                 <span className={styles.imguser_content}>
-                                    <img src={userProfile.avatar_url} alt="Avatar"/>
+                                    <img src={img_user} alt="Avatar" />
                                 </span>
                             </Link></span>
                         </span>
