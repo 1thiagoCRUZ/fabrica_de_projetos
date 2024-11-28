@@ -38,7 +38,7 @@ function GetTasks() {
     }, [userId]);
 
     if (loading) {
-        return <img src={loading_svg} />;
+        return <div className={styles.loading_container_task}><img src={loading_svg} /></div>;
     }
 
     if (error) {

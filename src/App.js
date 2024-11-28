@@ -11,6 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 import Notes from "./pages/Notes";
 import Consultas from "./pages/Consultas";
+import TasksPage from "./pages/TasksPage";
 
 function App() {
   return (
@@ -19,6 +20,16 @@ function App() {
         <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} theme="colored" />
         <Routes>
           <Route path="/login" element={<LoginForm />} />
+
+          <Route path="/tasks" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <TasksPage />
+              </Container>
+            </ProtectedRoute>
+          } />
 
           <Route path="/notes" element={
             <ProtectedRoute>

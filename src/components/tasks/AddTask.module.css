@@ -29,6 +29,10 @@ button {
     gap: 12px; 
 }
 
+.status_text h4 {
+    padding-left: 7px;
+}
+
 .status_dot {
     width: 6px; 
     height: 6px;

@@ -7,7 +7,7 @@ function Filter( {btnText, handleShow}) {
         <div className={styles.filter_container}>
             <button className={styles.filter_btn}>Agenda</button>
             <button className={styles.filter_btn} data-filter="category1">
-                <Link to="/notes">
+                <Link to="/tasks">
                     <span>Tasks</span>
                 </Link>
             </button>

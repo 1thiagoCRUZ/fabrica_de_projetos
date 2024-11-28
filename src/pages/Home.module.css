@@ -1,12 +1,9 @@
 .main {
+    margin-top: 20px;
+    margin-right: 6px;
     position: fixed;
-    right: -2px;
-    margin-top: 12vh;
-    top: 0;
-    margin-right: 6px;  
-    bottom: 0;
     overflow-y: auto;
-    left: 17vw;
+    left: 17.5vw;
     padding-left: 30px;
 }
 
@@ -42,6 +39,8 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
+    width: 80vw;
+    padding: 8px;
 }
 
 h2 {
@@ -50,6 +49,7 @@ h2 {
     font-weight: 500;
     margin-right: 30px;
 }
+
 
 
 .filter_container {
