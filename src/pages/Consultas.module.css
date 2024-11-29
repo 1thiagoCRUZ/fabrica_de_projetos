@@ -1,9 +1,8 @@
 .main {
-    margin-top: 20px;
     margin-right: 6px;
     overflow: hidden;
     position: fixed;
-    left: 15vw;
+    left: 15.5vw;
     padding-left: 30px;
 }
 
@@ -80,14 +79,14 @@
     display: inline-block;
 }
 
-
-.bolinha_1, .bolinha_2 {
+.ball {
+    position: absolute;
     width: 40px; 
-    height: 40px;
-    background-color: #ffcc0044;
-    border: none;
+    height: 40px; 
     border-radius: 50%; 
-    position: absolute; 
+    border: none;
+    background-color: #ffcc0044; 
+    filter: blur(80px); 
     box-shadow: 0 0 200px 100px rgba(255, 204, 0, 0.4);
 }
 
@@ -105,6 +104,67 @@
     transform: translateY(-50%); 
 }
 
+.bolinha_1 {
+    animation: moveBall1 8s linear infinite; 
+}
+
+.bolinha_2 {
+    animation: moveBall2 8s linear infinite; 
+}
+
+@keyframes moveBall1 {
+    0% {
+        left: 0; /* Começa no canto superior esquerdo */
+        top: 0; /* Começa no canto superior esquerdo */
+    }
+    25% {
+        left: 100%; /* Move para o canto superior direito */
+        top: 0;
+        transform: translate(-100%, 0); /* Ajusta para fora do contêiner */
+    }
+    50% {
+        left: 100%; /* Move para o canto inferior direito */
+        top: 100%;
+        transform: translate(-100%, -100%);
+    }
+    75% {
+        left: 0; /* Move para o canto inferior esquerdo */
+        top: 100%;
+        transform: translate(0, -100%);
+    }
+    100% {
+        left: 0; /* Retorna ao canto superior esquerdo */
+        top: 0;
+    }
+}
+
+@keyframes moveBall2 {
+    0% {
+        left: 100%; /* Começa no canto superior direito */
+        top: 100%; /* Começa no canto inferior direito */
+    }
+    25% {
+        left: 0; /* Move para o canto inferior esquerdo */
+        top: 100%;
+        transform: translate(0, 0);
+    }
+    50% {
+        left: 0; /* Move para o canto superior esquerdo */
+        top: 0;
+        transform: translate(0, 0);
+    }
+    75% {
+        left: 100%; /* Move para o canto superior direito */
+        top: 0;
+        transform: translate(-100%, 0); /* Mantém a bolinha visível */
+    }
+    100% {
+        left: 100%;
+        top: 105%; 
+        transform: translate(-100%, 0); 
+    }
+}
+
 
 .section {
     display: flex;
@@ -113,4 +173,11 @@
     overflow: hidden; 
     height: 100vh; 
     width: 83vw; 
+}
+
+@media (max-width: 1630px) {
+    .main {
+        left: 15vw;  /* Para telas menores, você pode diminuir o valor de left */
+        width: calc(100% - 5vw); /* Ajusta a largura para acompanhar o novo valor do left */
+    }
 }

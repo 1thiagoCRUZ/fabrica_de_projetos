@@ -5,9 +5,8 @@ function Consultas() {
     return (
         <main className={styles.main}>
             <span className={styles.section}>
-                <div className={styles.bolinha_1}>
-                    
-                </div>
+                <div className={`${styles.ball} ${styles.bolinha_1}`}></div>
+
                 <div className={styles.consultas_container}>
                     <div className={styles.h1_consultas_container}>
                         <h1>Tire suas dúvidas sobre a<br /> <span className={styles.highlight}>Avivatec</span></h1>
@@ -20,9 +19,7 @@ function Consultas() {
                     </div>
                 </div>
 
-                <div className={styles.bolinha_2}>
-                   
-                </div>
+                <div className={`${styles.ball} ${styles.bolinha_2}`}></div>
             </span>
         </main>
     )
