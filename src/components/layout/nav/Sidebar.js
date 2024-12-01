@@ -9,9 +9,21 @@ import { IoMdLogOut } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import logoAvivatec from '../../../img/avivateclogo.svg'
 import SidebarLogout from './sidebar_logout/SidebarLogout';
+import { useState } from 'react';
+import VideoCallEmbed from '../../call/VideoChamada';
 
 
 function Sidebar() {
+    const [isVideoCallActive, setIsVideoCallActive] = useState(false);
+
+    const handleStartCall = () => {
+        setIsVideoCallActive(true); // Ativa a chamada
+    };
+
+    const handleEndCall = () => {
+        setIsVideoCallActive(false); // Desativa a chamada
+    };
+
     return (
         <>
             <aside className={styles.sidebar}>
@@ -76,12 +88,12 @@ function Sidebar() {
                         </li>
 
                         <li className={styles.item}>
-                            <Link to="https://video-chamada-r6rl.onrender.com">
-                            <span className={styles.btn_item}>
-                                <BiVideo className={styles.icone_video} />
-                                <span>Chamada</span>
-                            </span>
-                            </Link>
+                            {/* <Link to="https://video-chamada-r6rl.onrender.com"> */}
+                                <span className={styles.btn_item} onClick={handleStartCall}>
+                                    <BiVideo className={styles.icone_video} />
+                                    <span>Chamada</span>
+                                </span>
+                            {/* </Link> */}
                         </li>
                     </ul>
 
@@ -106,6 +118,8 @@ function Sidebar() {
                     <SidebarLogout />
                 </nav>
             </aside>
+
+            {isVideoCallActive && <VideoCallEmbed />}
         </>
     )
 }

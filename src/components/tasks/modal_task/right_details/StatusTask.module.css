@@ -43,6 +43,11 @@
     color: #fff;
 }
   
+.selectRevisar {
+    background-color: #b99923;
+    font-size: 10px;
+    color: #fff;
+}
 
 .styledSelect::after {
     content: '▼';

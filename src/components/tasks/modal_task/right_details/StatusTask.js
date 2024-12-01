@@ -15,6 +15,8 @@ function StatusTask({ status, setStatus }) {
                 return styles.selectPendente;
             case 'concluido':
                 return styles.selectConcluido;
+            case 'revisar':
+                return styles.selectRevisar;
             default:
                 return '';
         }
@@ -33,6 +35,7 @@ function StatusTask({ status, setStatus }) {
                 <option value="in-progress">In Progress</option>
                 <option value="pendente">Pendente</option>
                 <option value="concluido">Concluído</option>
+                <option value="revisar">Revisar</option>
             </select>
         </div>
     );

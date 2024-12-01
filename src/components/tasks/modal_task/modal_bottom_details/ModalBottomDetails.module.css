@@ -17,7 +17,7 @@
 }
 
 .icon_subtask {
-    color: #34C759;
+    color: #FFCC00;
     font-size: 18px;
 }
 
@@ -53,7 +53,7 @@
 
 
 .checkboxInput:checked + .customCheckbox {
-    border: solid 2px #34C759;
+    border: solid 2px #FFCC00;
 }
 
 .checkboxInput:checked + .customCheckbox::after {
@@ -63,7 +63,7 @@
     left: 3px;
     width: 3px;
     height: 6px;
-    border: solid #34C759;
+    border: solid #FFCC00;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
@@ -76,7 +76,7 @@
     height: 36px;
     background-color: #242424;
     color: #fff;
-    outline-color: #34C759;
+    outline-color: #FFCC00;
     margin-right: 10px;
 
 }

@@ -1,0 +1,181 @@
+.main {
+    padding-top: 20px;
+    margin-right: 6px;
+    overflow: auto;
+    position: fixed;
+    left: 17.5vw;
+    padding-left: 30px;
+}
+
+.text_welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80vw;
+    padding: 8px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #fffffd;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+
+.main::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.main::-webkit-scrollbar-track {
+    background: #2c2c2c; 
+    border-radius: 4px; 
+}
+
+.main::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px; 
+    transition: background 0.3s ease; 
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.main {
+    scrollbar-color: #888 #2c2c2c; 
+    scrollbar-width: thin; 
+}
+
+.calendar_container {
+    width: 80vw;
+    height: 90vh;
+    padding-right: 40px;
+  }
+
+  .header {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .header p {
+    font-weight: lighter;
+  }
+
+  .header_year {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav_button {
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav_button:hover {
+    background-color: #252525;
+  }
+  
+  .month_year {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .calendar {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  
+  .calendar_content {
+    border: none;
+    background-color: #252525;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    z-index: 1000;
+  }
+
+
+  .modal_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .modal_input {
+    margin-bottom: 15px;
+  }
+  
+  .modal_input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .input_field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input_field:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .modal_actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save_button, .cancel_button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .save_button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .save_button:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel_button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cancel_button:hover {
+    background-color: #e53935;
+  }
+  

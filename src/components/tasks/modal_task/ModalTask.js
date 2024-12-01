@@ -75,7 +75,7 @@ function ModalTask({ show, handleClose }) {
                 <div className={styles.left_content}>
                     <p className={styles.color_p_modal}>Projetos / Nova task</p>
 
-                    <h2>Create new task</h2>
+                    <h2>Nova Task</h2>
                     <TaskDetailsInput
                         details={details}
                         setDetails={setDetails}

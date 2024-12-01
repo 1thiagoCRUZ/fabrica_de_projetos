@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Notes from "./pages/Notes";
 import Consultas from "./pages/Consultas";
 import TasksPage from "./pages/TasksPage";
+import MyCalendar from "./components/calendar/Calendar";
 
 function App() {
   return (
@@ -20,6 +21,16 @@ function App() {
         <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} theme="colored" />
         <Routes>
           <Route path="/login" element={<LoginForm />} />
+
+          <Route path="/agenda" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <MyCalendar />
+              </Container>
+            </ProtectedRoute>
+          } />
 
           <Route path="/tasks" element={
             <ProtectedRoute>

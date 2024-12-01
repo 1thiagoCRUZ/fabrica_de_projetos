@@ -4,6 +4,9 @@ import ModalTask from '../components/tasks/modal_task/ModalTask';
 import Filter from '../components/layout/filter/Filter';
 import { useState } from 'react';
 import GetTasks from '../components/tasks/get_task/GetTasks';
+import GetTaskByStatus from '../components/tasks/get_task/GetTaskByStatus';
+import GoogleCalendarEmbed from '../components/calendar/Calendar';
+import MyCalendar from '../components/calendar/Calendar';
 
 function Home() {
     // Estado para controlar a visibilidade do modal
@@ -23,14 +26,34 @@ function Home() {
             </div>
 
             <div className={styles.filter_container}>
-                <AddTask status="Para Fazer" handleShow={handleShow} />
-                <AddTask status="In Progresso" handleShow={handleShow} />
-                <AddTask status="Concluído" handleShow={handleShow} />
-                <AddTask status="Revisar" handleShow={handleShow} />
+                <div className={styles.content_filter_task}>
+
+                    <div>
+                        <div className={styles.name_status}><AddTask status="Para Fazer" handleShow={handleShow} /></div>
+                        <span><GetTaskByStatus status="pendente" /></span>
+                    </div>
+
+
+                    <div>
+                        <div className={styles.name_status}><AddTask status="In Progresso" handleShow={handleShow} /></div>
+                        <span><GetTaskByStatus status="in-progress" /></span>
+                    </div>
+
+                    <div>
+                        <div className={styles.name_status}><AddTask status="Concluído" handleShow={handleShow} /></div>
+                        <span><GetTaskByStatus status="concluido" /></span>
+                    </div>
+
+                    <div>
+                        <div><AddTask status="Revisar" handleShow={handleShow} /></div>
+                        <span><GetTaskByStatus status="revisar" /></span>
+                    </div>
+                </div>
+
             </div>
 
-            <GetTasks />
             <ModalTask show={showModal} handleClose={handleClose} />
+
         </main>
     );
 }
