@@ -1,10 +1,12 @@
-import { FiSearch } from 'react-icons/fi'
+
 import styles from './Consultas.module.css'
+import CardSummaryList from '../components/card_summary/CardSummaryList'
+
 
 function Consultas() {
     return (
         <main className={styles.main}>
-            <span className={styles.section}>
+            {/* <span className={styles.section}>
                 <div className={`${styles.ball} ${styles.bolinha_1}`}></div>
 
                 <div className={styles.consultas_container}>
@@ -20,7 +22,12 @@ function Consultas() {
                 </div>
 
                 <div className={`${styles.ball} ${styles.bolinha_2}`}></div>
-            </span>
+            </span> */}
+            <div className={styles.content_text_consulta}>
+                <h2>Consulte seus resumos aqui</h2>
+            </div>
+            <CardSummaryList />
+
         </main>
     )
 }

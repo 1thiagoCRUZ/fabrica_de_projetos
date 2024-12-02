@@ -1,183 +1,47 @@
 .main {
-    margin-right: 6px;
-    overflow: hidden;
+     margin-right: 6px;
     position: fixed;
-    left: 15.5vw;
+    left: 17.5vw;
+    padding-top: 20px;
     padding-left: 30px;
+    height: 90vh; 
+    overflow-y: auto; 
 }
 
+.content_text_consulta {
+    margin-top: 20px;
+    margin-bottom: 30px;
 
-.consultas_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-    width: 80vw;
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
 }
 
-.consultas_container h1 {
-    font-size: 3.5em;
+.content_text_consulta h2 {
+    font-size: 34px;
     font-weight: lighter;
     color: #fff;
-    text-align: center;
-    line-height: 1.2; 
-}
-
-.h1_consultas_container {
-    margin-bottom: 5vw;
-}
-
-.search_container_consulta {
-    height: 43px;
-    display: flex;
-    align-items: center;
-    width: 50vw;
-    background-color: #353535;
-    border-radius: 5px;
-    color: #828282;
-    border: solid 1px #303030b7;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    transition: box-shadow 0.3s ease; 
-    border-radius: 5px;
-}
-
-.search_container_consulta:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-}
-
-.search_input_consultas {
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    outline: none;
-    flex: 1;
-    color: #828282;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #252525;
-    color: #807979;
-    height: 42px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    width: 52px;
-    text-align: center;
-    cursor: pointer;
 }
 
 
-.highlight {
-    display: inline-block;
+.main::-webkit-scrollbar {
+    width: 8px; 
 }
 
-.ball {
-    position: absolute;
-    width: 40px; 
-    height: 40px; 
-    border-radius: 50%; 
-    border: none;
-    background-color: #ffcc0044; 
-    filter: blur(80px); 
-    box-shadow: 0 0 200px 100px rgba(255, 204, 0, 0.4);
+.main::-webkit-scrollbar-track {
+    background: #2c2c2c; 
+    border-radius: 4px; 
 }
 
+.main::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px; 
+    transition: background 0.3s ease; 
+}
 
-.bolinha_1 {
-    top: 50%; 
-    left: -50px; 
-    transform: translateY(-50%); 
+.main::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 
-.bolinha_2 {
-    top: 80%; 
-    right: -50px; 
-    transform: translateY(-50%); 
-}
-
-.bolinha_1 {
-    animation: moveBall1 8s linear infinite; 
-}
-
-.bolinha_2 {
-    animation: moveBall2 8s linear infinite; 
-}
-
-@keyframes moveBall1 {
-    0% {
-        left: 0; /* Começa no canto superior esquerdo */
-        top: 0; /* Começa no canto superior esquerdo */
-    }
-    25% {
-        left: 100%; /* Move para o canto superior direito */
-        top: 0;
-        transform: translate(-100%, 0); /* Ajusta para fora do contêiner */
-    }
-    50% {
-        left: 100%; /* Move para o canto inferior direito */
-        top: 100%;
-        transform: translate(-100%, -100%);
-    }
-    75% {
-        left: 0; /* Move para o canto inferior esquerdo */
-        top: 100%;
-        transform: translate(0, -100%);
-    }
-    100% {
-        left: 0; /* Retorna ao canto superior esquerdo */
-        top: 0;
-    }
-}
-
-@keyframes moveBall2 {
-    0% {
-        left: 100%; /* Começa no canto superior direito */
-        top: 100%; /* Começa no canto inferior direito */
-    }
-    25% {
-        left: 0; /* Move para o canto inferior esquerdo */
-        top: 100%;
-        transform: translate(0, 0);
-    }
-    50% {
-        left: 0; /* Move para o canto superior esquerdo */
-        top: 0;
-        transform: translate(0, 0);
-    }
-    75% {
-        left: 100%; /* Move para o canto superior direito */
-        top: 0;
-        transform: translate(-100%, 0); /* Mantém a bolinha visível */
-    }
-    100% {
-        left: 100%;
-        top: 105%; 
-        transform: translate(-100%, 0); 
-    }
-}
-
-
-.section {
-    display: flex;
-    flex-direction: row;
-    position: relative; 
-    overflow: hidden; 
-    height: 100vh; 
-    width: 83vw; 
-}
-
-@media (max-width: 1630px) {
-    .main {
-        left: 15vw;  /* Para telas menores, você pode diminuir o valor de left */
-        width: calc(100% - 5vw); /* Ajusta a largura para acompanhar o novo valor do left */
-    }
+.main {
+    scrollbar-color: #888 #2c2c2c; 
+    scrollbar-width: thin; 
 }

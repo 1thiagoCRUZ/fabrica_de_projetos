@@ -154,7 +154,7 @@ const Chat = () => {
                                     placeholder="Escrever"
                                     className={styles.search_user}
                                 />
-                                <button onClick={sendMessage}>
+                                <button onClick={sendMessage} className={styles.send_message_button}>
                                     <img src={iconSend} alt="Send" />
                                 </button>
                             </div>

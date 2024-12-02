@@ -74,7 +74,7 @@
     height: 55px;
 }
 
-.chat_container button {
+.send_message_button {
     width: 54px;
     height: 55px;
     background-color: #252525;
@@ -84,7 +84,7 @@
     cursor: pointer;
 }
 
-.chat_container button:hover {
+.send_message_button:hover {
     background-color: #828282;
 }
 
