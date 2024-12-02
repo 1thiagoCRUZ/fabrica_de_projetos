@@ -80,19 +80,20 @@ function Sidebar() {
                         </li>
 
                         <li className={styles.item}>
-                            {/* Colocar o Link aqui na Nav */}
-                            <span className={styles.btn_item}>
-                                <BsChatSquare />
-                                <span>Chat</span>
-                            </span>
+                            <Link to="/chat">
+                                <span className={styles.btn_item}>
+                                    <BsChatSquare />
+                                    <span>Chat</span>
+                                </span>
+                            </Link>
                         </li>
 
                         <li className={styles.item}>
                             {/* <Link to="https://video-chamada-r6rl.onrender.com"> */}
-                                <span className={styles.btn_item} onClick={handleStartCall}>
-                                    <BiVideo className={styles.icone_video} />
-                                    <span>Chamada</span>
-                                </span>
+                            <span className={styles.btn_item} onClick={handleStartCall}>
+                                <BiVideo className={styles.icone_video} />
+                                <span>Chamada</span>
+                            </span>
                             {/* </Link> */}
                         </li>
                     </ul>

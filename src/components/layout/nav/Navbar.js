@@ -42,6 +42,7 @@ function Navbar() {
 
                 if (data[0]?.id) {
                     localStorage.setItem('user_id', data[0].id);
+                    localStorage.setItem('avatar_url', data[0]?.avatar_url || "");
                 }
             } catch (err) {
                 setError(err.message);

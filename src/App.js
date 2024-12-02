@@ -13,6 +13,7 @@ import Notes from "./pages/Notes";
 import Consultas from "./pages/Consultas";
 import TasksPage from "./pages/TasksPage";
 import MyCalendar from "./components/calendar/Calendar";
+import Chat from "./components/chat/Chat";
 
 function App() {
   return (
@@ -28,6 +29,17 @@ function App() {
               <Sidebar />
               <Container customClass="min-height">
                 <MyCalendar />
+              </Container>
+            </ProtectedRoute>
+          } />
+
+
+          <Route path="/chat" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <Chat />
               </Container>
             </ProtectedRoute>
           } />

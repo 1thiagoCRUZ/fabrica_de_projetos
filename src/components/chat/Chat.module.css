@@ -1,0 +1,154 @@
+.main {
+    left: 17vw;
+    position: fixed;
+}
+
+
+.chat_container {
+    display: flex;
+    width: 83vw;
+    overflow: hidden;
+}
+
+
+.chat_window {
+    width: 40%; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info_user_chat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.info_user_chat p {
+    margin-left: 5px;
+    font-size: smaller;
+    font-weight: 100;
+}
+
+.span_name {
+    font-size: 30px;
+    font-weight: 100; 
+}
+
+
+.line_bottom_name {
+    height: 1px;
+    background-color: #252525;
+    width: 57vw;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 5px;
+    width: 59vw;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.messages div {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+    border-radius: 5px;
+    color: #fff;
+}
+
+.search_user {
+    width: 53vw;
+    outline: none;
+    border: none;
+    background-color: #252525;
+    padding: 15px;
+    color: #828282;
+    border-radius: 2px;
+    height: 55px;
+}
+
+.chat_container button {
+    width: 54px;
+    height: 55px;
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.chat_container button:hover {
+    background-color: #828282;
+}
+
+.message_input_content {
+    position: fixed;
+    bottom: 10px;
+    gap: 20px;
+    display: flex;
+    width: 60vw;
+    flex-direction: row;
+}
+
+.message_content img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.message_wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+
+.avatar_and_message {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.user_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+
+.message_from_user .message_wrapper .avatar_and_message p {
+    background-color: #252525;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.message_from_other .message_wrapper .avatar_and_message p {
+    background-color: #252525;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 80%;
+}
+
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54vw;
+    height: 80vh;
+}
+
+
