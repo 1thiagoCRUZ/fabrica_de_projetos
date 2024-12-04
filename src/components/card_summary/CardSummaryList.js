@@ -8,10 +8,13 @@ const CardSummaryList = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        const apiUrl = window.location.protocol === 'https:' ?
+        'https://ec2-3-144-93-193.us-east-2.compute.amazonaws.com:8080/get_summaries' :
+        'http://ec2-3-144-93-193.us-east-2.compute.amazonaws.com:8080/get_summaries';
         const fetchSummaries = async () => {
             try {
                 setLoading(true);
-                const response = await fetch('http://ec2-3-144-93-193.us-east-2.compute.amazonaws.com:8080/get_summaries', {
+                const response = await fetch(apiUrl, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
