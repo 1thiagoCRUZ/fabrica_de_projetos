@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { useState } from "react"
-import styles from './GetNotes.module.css'
-import loading_svg from '../../../img/loading.svg'
+import { useState } from "react";
+import styles from './GetNotes.module.css';
+import loading_svg from '../../../img/loading.svg';
 import { IoMdMore } from "react-icons/io";
 
 function GetNotes() {
@@ -39,11 +39,11 @@ function GetNotes() {
     }, [userId]);
 
     if (loading) {
-        return <img src={loading_svg} />;
+        return <div className={styles.loading_container_note}><img src={loading_svg} /></div>;
     }
 
     if (error) {
-        return <p>Erro: {error}</p>
+        return <p>Erro: {error}</p>;
     }
 
     return (
@@ -52,7 +52,10 @@ function GetNotes() {
                 <ul className={styles.ul_note}>
                     {notes.map((note) => (
                         <li key={note.id} className={styles.note_card}>
-                            <div className={styles.color_container}></div>
+                            <div
+                                className={styles.color_container}
+                                style={{ backgroundColor: note.color_note }} 
+                            ></div>
 
                             <div className={styles.card_header}>
                                 <span>
@@ -64,8 +67,6 @@ function GetNotes() {
                                     <IoMdMore />
                                 </span>
                             </div>
-
-
 
                             <p className={styles.note_description}>{note.description_note}</p>
                         </li>

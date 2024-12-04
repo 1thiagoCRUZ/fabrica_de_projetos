@@ -14,6 +14,7 @@ import Consultas from "./pages/Consultas";
 import TasksPage from "./pages/TasksPage";
 import MyCalendar from "./components/calendar/Calendar";
 import Chat from "./components/chat/Chat";
+import PageDesenvolvimento from "./pages/PageDesenvolvimento";
 
 function App() {
   return (
@@ -32,6 +33,17 @@ function App() {
               </Container>
             </ProtectedRoute>
           } />
+
+          <Route path="/pagina_em_desenvolvimento" element={
+            <ProtectedRoute>
+              <Navbar />
+              <Sidebar />
+              <Container customClass="min-height">
+                <PageDesenvolvimento />
+              </Container>
+            </ProtectedRoute>
+          } />
+
 
 
           <Route path="/chat" element={

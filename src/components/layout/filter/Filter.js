@@ -5,20 +5,25 @@ import ButtonFilter from './ButtonFilter'
 function Filter({ btnText, handleShow }) {
     return (
         <div className={styles.filter_container}>
-            <button className={styles.filter_btn}>
-                <Link to="/agenda">
-                    <span>Agenda</span>
-                </Link>
-            </button>
             <button className={styles.filter_btn} data-filter="category1">
                 <Link to="/tasks">
                     <span>Tasks</span>
                 </Link>
             </button>
+
             <button className={styles.filter_btn} data-filter="category2">
                 <Link to="/notes">
-                    <span>Notes</span>
-                </Link></button>
+                    <span>Notas</span>
+                </Link>
+            </button>
+
+            <button className={styles.filter_btn}>
+                <Link to="/agenda">
+                    <span>Agenda</span>
+                </Link>
+            </button>
+
+
 
             <span className={styles.btn_filter_text}>
                 <ButtonFilter text={btnText} show={handleShow} />

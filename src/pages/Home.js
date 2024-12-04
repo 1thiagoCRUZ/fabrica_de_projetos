@@ -3,10 +3,8 @@ import AddTask from '../components/tasks/AddTask';
 import ModalTask from '../components/tasks/modal_task/ModalTask';
 import Filter from '../components/layout/filter/Filter';
 import { useState } from 'react';
-import GetTasks from '../components/tasks/get_task/GetTasks';
 import GetTaskByStatus from '../components/tasks/get_task/GetTaskByStatus';
-import GoogleCalendarEmbed from '../components/calendar/Calendar';
-import MyCalendar from '../components/calendar/Calendar';
+
 
 function Home() {
     // Estado para controlar a visibilidade do modal

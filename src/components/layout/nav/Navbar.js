@@ -15,7 +15,7 @@ function Navbar() {
     const { auth } = useAuth();
     const token = auth?.token;
     useEffect(() => {
-        console.log("Token enviado:", token);
+        // console.log("Token enviado:", token);
         const fetchUserProfile = async () => {
             try {
                 setLoading(true);

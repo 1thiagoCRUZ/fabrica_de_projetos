@@ -47,11 +47,12 @@ function Sidebar() {
                         </li>
 
                         <li className={styles.item}>
-                            {/* Colocar o Link aqui na Nav */}
-                            <span className={styles.btn_item}>
-                                <MdOutlineDashboardCustomize />
-                                <span>Dashboard</span>
-                            </span>
+                            <Link to="/pagina_em_desenvolvimento">
+                                <span className={styles.btn_item}>
+                                    <MdOutlineDashboardCustomize />
+                                    <span>Dashboard</span>
+                                </span>
+                            </Link>
                         </li>
 
                         <li className={styles.item}>
@@ -64,19 +65,21 @@ function Sidebar() {
                         </li>
 
                         <li className={styles.item}>
-                            {/* Colocar o Link aqui na Nav */}
-                            <span className={styles.btn_item}>
-                                <FiUserPlus />
-                                <span>Cadastro</span>
-                            </span>
+                            <Link to="/pagina_em_desenvolvimento">
+                                <span className={styles.btn_item}>
+                                    <FiUserPlus />
+                                    <span>Cadastro</span>
+                                </span>
+                            </Link>
                         </li>
 
                         <li className={styles.item}>
-                            {/* Colocar o Link aqui na Nav */}
-                            <span className={styles.btn_item}>
-                                <MdGroup />
-                                <span>Grupos</span>
-                            </span>
+                            <Link to="/pagina_em_desenvolvimento">
+                                <span className={styles.btn_item}>
+                                    <MdGroup />
+                                    <span>Grupos</span>
+                                </span>
+                            </Link>
                         </li>
 
                         <li className={styles.item}>
@@ -89,29 +92,33 @@ function Sidebar() {
                         </li>
 
                         <li className={styles.item}>
-                            {/* <Link to="https://video-chamada-r6rl.onrender.com"> */}
-                            <span className={styles.btn_item} onClick={handleStartCall}>
-                                <BiVideo className={styles.icone_video} />
-                                <span>Chamada</span>
-                            </span>
-                            {/* </Link> */}
+                            <Link to="https://video-chamada-r6rl.onrender.com">
+                                {/* onClick={handleStartCall} */}
+                                <span className={styles.btn_item}>
+                                    <BiVideo className={styles.icone_video} />
+                                    <span>Chamada</span>
+                                </span>
+                            </Link>
                         </li>
                     </ul>
 
                     <ul className={styles.sidebar_list_down}>
                         <li className={styles.item_list_down}>
-                            <span className={styles.btn_item_list_down}>
-                                <IoNotificationsOutline />
-                                <span>Notificações</span>
-                            </span>
+                            <Link to="/pagina_em_desenvolvimento">
+                                <span className={styles.btn_item_list_down}>
+                                    <IoNotificationsOutline />
+                                    <span>Notificações</span>
+                                </span>
+                            </Link>
                         </li>
 
                         <li className={styles.item_list_down}>
-                            {/* Colocar o Link aqui na Nav */}
-                            <span className={styles.btn_item_list_down}>
-                                <IoSettingsOutline />
-                                <span>Configurações</span>
-                            </span>
+                            <Link to="/profile_user">
+                                <span className={styles.btn_item_list_down}>
+                                    <IoSettingsOutline />
+                                    <span>Configurações</span>
+                                </span>
+                            </Link>
                         </li>
                     </ul>
 

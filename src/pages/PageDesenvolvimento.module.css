@@ -1,0 +1,49 @@
+.main {
+    margin-top: 20px;
+    margin-right: 6px;
+    position: fixed;
+    left: 17.5vw;
+    padding-left: 30px;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.image_container {
+    display: flex;
+    width: 78vw;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_desenvolvimento {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+ 
+}
+
+.text_desenvolvimento h1 {
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+/* Efeito de piscar do cursor */
+.text_desenvolvimento h1::after {
+    content: '|'; /* Representa o cursor */
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

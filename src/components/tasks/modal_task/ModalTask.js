@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './ModalTask.module.css'
+import styles from './ModalTask.module.css';
 import { MdOutlineDashboard } from "react-icons/md";
 import TaskDetailsInput from './TaskDetails';
 import ModalBottomDetails from './modal_bottom_details/ModalBottomDetails';
@@ -9,7 +9,7 @@ import DateTask from './right_details/DateTask';
 import { toast } from 'react-toastify';
 
 function ModalTask({ show, handleClose }) {
-    const [taskName, setTaskName] = useState(''); 
+    const [taskName, setTaskName] = useState('');
     const [details, setDetails] = useState('');
     const [priority, setPriority] = useState('');
     const [status, setStatus] = useState('');
@@ -17,23 +17,21 @@ function ModalTask({ show, handleClose }) {
 
     const handleCreateTask = async () => {
         try {
-        
-            const userId = localStorage.getItem('user_id'); 
+            const userId = localStorage.getItem('user_id');
             if (!userId) {
                 alert('ID do usuário não encontrado.');
                 return;
             }
-        
+
             const taskData = {
                 user_id_task: userId,
                 title_task: taskName,
                 description_task: details,
                 prioridade: priority,
-                data_final: finalDate ? finalDate.toISOString() : null,  
+                data_final: finalDate ? finalDate.toISOString() : null,
                 status_task: status,
             };
-            
-        
+
             console.log(taskData);
 
             const response = await fetch('https://api-talklog.onrender.com/v1/task', {
@@ -50,6 +48,10 @@ function ModalTask({ show, handleClose }) {
 
             const data = await response.json();
             console.log('Task criada com sucesso:', data);
+
+           
+            window.location.reload();
+
             handleClose();
             toast.success('Task criada com sucesso!', {
                 style: {
@@ -57,7 +59,7 @@ function ModalTask({ show, handleClose }) {
                     color: '#fff',
                 }
             });
-            
+
         } catch (error) {
             console.error('Erro ao criar a task:', error);
             alert('Não foi possível criar a task.');

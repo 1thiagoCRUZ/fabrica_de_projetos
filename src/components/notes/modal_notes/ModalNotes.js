@@ -2,13 +2,13 @@ import { useState } from 'react';
 import InputNotes from '../input_notes/InputNotes';
 import NotesDetailsInput from '../input_notes/NotesDetails';
 import ColorSelector from './color_selector/ColorSelector';
-import styles from './ModalNotes.module.css'
+import styles from './ModalNotes.module.css';
 import { toast } from 'react-toastify';
 
 function ModalNotes({ show, handleClose }) {
-
     const [noteTitle, setNoteTitle] = useState('');
     const [details, setDetails] = useState('');
+    const [selectedColor, setSelectedColor] = useState('');
 
     const handleCreateNote = async () => {
         try {
@@ -22,6 +22,7 @@ function ModalNotes({ show, handleClose }) {
                 title_note: noteTitle,
                 description_note: details,
                 user_id_note: userId,
+                color_note: selectedColor,
             };
 
             console.log(noteData);
@@ -40,7 +41,9 @@ function ModalNotes({ show, handleClose }) {
 
             const data = await response.json();
             console.log('Nota criada com sucesso: ', data);
-            handleClose();
+
+            window.location.reload(); 
+
             toast.success('Nota criada com sucesso!', {
                 style: {
                     backgroundColor: '#252525',
@@ -57,10 +60,10 @@ function ModalNotes({ show, handleClose }) {
 
     const colors = ['#FFCC00', '#FF3B30', '#34C759', '#30B0C7', '#007AFF', '#AF52DE'];
 
+
     return (
         <div className={styles.modal}>
             <div className={styles.modal_content}>
-
                 <div className={styles.header_modal}>
                     <div>
                         <h2>Adicionar Nota</h2>
@@ -73,17 +76,16 @@ function ModalNotes({ show, handleClose }) {
 
                 <div className={styles.input_container}>
                     <div>
-                        <InputNotes text_placeholder='Título' noteTitle={noteTitle} setNoteTitle={setNoteTitle}/>
+                        <InputNotes text_placeholder='Título' noteTitle={noteTitle} setNoteTitle={setNoteTitle} />
                     </div>
 
                     <div>
-                        <NotesDetailsInput  details={details} setDetails={setDetails}/>
+                        <NotesDetailsInput details={details} setDetails={setDetails} />
                     </div>
-
                 </div>
 
                 <div className={styles.buttons_note}>
-                    <ColorSelector colors={colors}/>
+                    <ColorSelector colors={colors} onColorSelect={setSelectedColor} />
                     <button onClick={handleCreateNote} className={styles.create_note}>Criar</button>
                 </div>
             </div>
