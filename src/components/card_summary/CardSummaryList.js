@@ -11,7 +11,7 @@ const CardSummaryList = () => {
         const fetchSummaries = async () => {
             try {
                 setLoading(true);
-                const response = await fetch('http://ec2-13-58-195-207.us-east-2.compute.amazonaws.com:8080/get_summaries', {
+                const response = await fetch('http://ec2-3-144-93-193.us-east-2.compute.amazonaws.com:8080/get_summaries', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
